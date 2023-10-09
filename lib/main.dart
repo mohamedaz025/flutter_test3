@@ -38,21 +38,24 @@ appBar: AppBar(
   shadowColor: Colors.black,
   elevation: 20,
   centerTitle: true,
+  
 ),
 
   body: 
-      Container(
+  Padding(padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
+  child: Container(
         color: Colors.grey[500],
          width: 395,
-         height: 300,
-         child: Row(
+         height: 550,
+         margin: EdgeInsets.fromLTRB(0, 50, 0, 0),
+         child: Column(
           children: [
             Expanded(
               flex: 3,
               child: Container(
                 alignment: Alignment.center,
                 child: Text("belquis", style: TextStyle(fontSize: 20,),),
-                
+                margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 color: Colors.blue ,
                 width: 100,
                 height: 100,
@@ -78,12 +81,15 @@ appBar: AppBar(
               color: Colors.yellow,
               width: 100,
               height:100,
-              ),)
+              ),
+              ),
 
              
           ],
          ),
-      )
+      ),
+  )
+      
     
 
     );
